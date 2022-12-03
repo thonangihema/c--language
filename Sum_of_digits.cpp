@@ -10,9 +10,6 @@ int main()
     int sum=0;
     cout<<"enter 4 digits number:";
     cin>>s;
-    for(int i=0;i<s.length();i++)
-    {
-        sum=sum+(s[i]-'0');
-    }
+    sum=(s[0]-'0')+(s[1]-'0')+(s[2]-'0')+(s[3]-'0');
     cout<<sum;
 }
