@@ -12,5 +12,5 @@ int main()
 {
     int x,y;
     cin>>x>>y;
-    cout<<setprecision(2)<<"$"<<(x*0.10)+(y*0.25);
+    cout<<fixed<<setprecision(2)<<"$"<<(x*0.10)+(y*0.25);
 }
