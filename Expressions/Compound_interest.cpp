@@ -13,11 +13,11 @@ int main()
     float one=0.0,two=0.0,three=0.0;
     cout<<"Enter the amount of money deposited into the account : ";
     cin>>m;
-    one=(float)4/100+m;
-    two=(float)4/100+one;
-    three=(float)4/100+two;
-    cout<<"Year-1 : " <<one<<"\n";
-    cout<<"Year-2 : " <<two<<"\n";
-    cout<<"Year-3 : " <<three<<"\n";
+    one=(m*(float)4/100)+m;
+    two=(one*(float)4/100)+one;
+    three=(two*(float)4/100)+two;
+    cout<<fixed<<setprecision(2)<<"Year-1 : " <<one<<"\n";
+    cout<<fixed<<setprecision(2)<<"Year-2 : " <<two<<"\n";
+    cout<<fixed<<setprecision(2)<<"Year-3 : " <<three<<"\n";
 
 }
