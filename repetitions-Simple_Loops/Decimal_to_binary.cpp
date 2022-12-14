@@ -17,18 +17,18 @@ using namespace std;
 int main()
 {
     int q,r,dis;
-    vector<int>result;
+    string result;
     cin>>q;
     dis=q;
     while(q!=0)
     {
         r=q%2;
-        result.push_back(r);
+        result+=to_string(r);
         q=q/2;
 
     }
     cout<<"Binary Equivalent to decimal "<<dis<<" is ";
-    for(int i=result.size()-1;i>=0;i--)
+    for(int i=result.length()-1;i>=0;i--)
     {
         cout<<result[i];
     }
