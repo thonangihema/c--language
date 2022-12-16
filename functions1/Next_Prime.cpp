@@ -4,12 +4,11 @@ Include a main program that reads an integer from the user and displays the firs
 number larger than the entered value*/
 #include<bits/stdc++.h>
 using namespace std;
-bool isPrime(int num)
+bool isPrime(int numb)
 {
-    int count=0;
-    for(int i=2;i<=sqrt(num);i++)
+    for(int i=2;i<=sqrt(numb);i++)
    {
-      if(num%i==0)
+      if(numb%i==0)
       {
          return false;
       }
@@ -17,19 +16,19 @@ bool isPrime(int num)
    return true;
     
 }
-int prime(int n)
+int prime(int num)
 {
-    int p=n;
-    int b=0;
-    while(b!=1)
+    int prm=num;
+    int count=0;
+    while(count!=1)
     {
-        p++;
-        if(isPrime(p))
+        prm++;
+        if(isPrime(prm))
         {
-            b=1;
+            count=1;
         }
     }
-    return p;
+    return prm;
 }
 int main()
 {
