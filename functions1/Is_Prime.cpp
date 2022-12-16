@@ -7,7 +7,6 @@ and displays a message indicating whether or not it is prime.
 using namespace std;
 bool isPrime(int num)
 {
-    int count=0;
     for(int i=2;i<=sqrt(num);i++)
    {
       if(num%i==0)
