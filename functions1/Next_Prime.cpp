@@ -11,17 +11,10 @@ bool isPrime(int num)
    {
       if(num%i==0)
       {
-         count=1;
-         break;
+         return false;
       }
    }
-   if(count==0 && num>1)
-   {
-      return true;
-   }
-   else{
-      return false;
-   }
+   return true;
     
 }
 int prime(int n)
