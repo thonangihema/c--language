@@ -32,10 +32,18 @@ int main()
     cin>>number;
     if(isPerfect(number))
     {
-        cout<<"Perfect Number";
+        cout<<number<<" is Perfect Number\n";
     }
     else
     {
-        cout<<"Not a Perfect Number";
+        cout<<number<<" is Not a Perfect Number\n";
+    }
+    cout<<"Perfect number between 1 and 10000n:";
+    for(int i=1;i<=10000;i++)
+    {
+        if(isPerfect(i))
+        {
+            cout<<i<<" ";
+        }
     }
 }
