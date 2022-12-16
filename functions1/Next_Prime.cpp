@@ -22,7 +22,7 @@ int prime(int num)
     int count=0;
     while(count!=1)
     {
-        prm++;
+        prm=prm+1;
         if(isPrime(prm))
         {
             count=1;
