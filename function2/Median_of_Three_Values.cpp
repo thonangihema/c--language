@@ -1,3 +1,7 @@
+/*Write a function named medianOfThree that takes three numbers as parameters, and 
+returns the median value of those parameters as its result. Include a main program that 
+reads three values from the user and displays their median. The median value is the 
+middle of the three values when they are sorted into ascending order.*/
 #include<iostream>
 using namespace std;
 int medianOfThree(int num1,int num2,int num3)
@@ -10,7 +14,7 @@ int medianOfThree(int num1,int num2,int num3)
         }
         else
         {
-            return num3;
+            return num1;
         }
     }
     else
