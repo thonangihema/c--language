@@ -9,7 +9,7 @@ whether or not it represents an integer*/
 using namespace std;
 bool isInteger(string val,int pn)
 {
-    int c=0;
+    
     for(int i=pn;i<val.length();i++)
     {
         if(isdigit(val[i])==false)
