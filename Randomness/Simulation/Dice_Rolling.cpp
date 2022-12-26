@@ -5,8 +5,8 @@ main function to demonstrate the function.*/
 using namespace std;
 bool rollDice()
 {
-    srand(time(0));
     int a,b,c,d,e;
+    srand(time(0));
     a=rand()%6+1;
     b=rand()%6+1;
     c=rand()%6+1;
@@ -25,8 +25,6 @@ bool rollDice()
 }
 int main()
 {
-    for(int i=0;i<10;i++)
-    {
     if(rollDice())
     {
         cout<<"Yahoo ";
@@ -34,7 +32,6 @@ int main()
     else
     {
         cout<<"Try again ";
-    }
     }
 
 }
