@@ -8,7 +8,6 @@ process for 10 times and displays minimum, maximum and average number of flips
 required to get the desired outcome.*/
 #include<bits/stdc++.h>
 #include <unistd.h>
- 
 using namespace std;
 int getNumOfFlips(){
     int prev=-1,nflips=0, current;
