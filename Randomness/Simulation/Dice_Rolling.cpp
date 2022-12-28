@@ -2,6 +2,7 @@
 "Yahoo" if all five dice are the same. Otherwise it should return "Try again". Write a 
 main function to demonstrate the function.*/
 #include<bits/stdc++.h>
+#include <unistd.h>
 using namespace std;
 bool rollDice()
 {
