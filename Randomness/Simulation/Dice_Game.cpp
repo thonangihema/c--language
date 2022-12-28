@@ -6,9 +6,10 @@ using namespace std;
 int diceGame()
 {
     int appear=0;
+    srand(time(0));
     for(int i=0;i<10;i++)
     {
-        srand(time(0));
+        //srand(time(0));
         if((rand()%6+1)==6)
         {
              appear+=1;
