@@ -19,6 +19,10 @@ string removeMysteryLength(string anc)
        {
         pos=pos*10;
         j++;
+        if(i==0)
+        {
+            return "notcorrectinput";
+        }
 
        }
     }
