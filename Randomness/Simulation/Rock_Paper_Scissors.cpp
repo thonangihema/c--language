@@ -13,6 +13,7 @@ input, then returns 1, 0 or -1 for win, loss and draw respectively.
 Write a main function that simulates the game for about 10 times and displays the 
 number of wins, losses and draws of a player.  */
 #include<bits/stdc++.h>
+#include <unistd.h>
 using namespace std;
 int getUserMove()
 {
@@ -27,10 +28,11 @@ int getComputerMove(){
     int move1=rand()%3;
     return move1;
 }
-int getResult()
+int getResult(int u)
 {
     int win=1,loss=0,draw=-1;
-    int usermove=getUserMove();
+    //int usermove=getUserMove();
+    int usermove=u;
     int computermove=getComputerMove();
     if(usermove==computermove)
     {
@@ -48,13 +50,14 @@ int getResult()
 int main()
 {
     int w=0,l=0,d=0;
+    int uc=getUserMove();
      for(int i=0;i<10;i++)
     {
-        if(getResult()==1)
+        if(getResult(uc)==1)
         {
             w++;
         }
-        else if(getResult()==0)
+        else if(getResult(uc)==0)
         {
             l++;
         }
@@ -62,6 +65,7 @@ int main()
         {
             d++;
         }
+        usleep(500000);
     }
     cout<<"win: "<<w<<" loss:"<<l<<" draw: "<<d<<"\n";
     
